@@ -42,15 +42,15 @@ If you’d like to improve this portfolio, feel free to fork the repo and submit
 
 Steps:
 
-Fork the project
+1) Fork the project
 
-Create a feature branch (git checkout -b feature/AmazingFeature)
+2) Create a feature branch (git checkout -b feature/AmazingFeature)
 
-Commit changes (git commit -m 'Add some AmazingFeature')
+3) Commit changes (git commit -m 'Add some AmazingFeature')
 
-Push to the branch (git push origin feature/AmazingFeature)
+4) Push to the branch (git push origin feature/AmazingFeature)
 
-Open a Pull Request
+5) Open a Pull Request
 
 ## 📬 Contact
 
@@ -58,10 +58,5 @@ Name: Bathini Praneeth
 
 Email: praneethbathini2916@gmail.com
 
-Portfolio: Visit Here
-
-LinkedIn: LinkedIn Profile
-
-GitHub: GitHub Profile
 
 ## ⭐ If you like this project, don’t forget to star the repo on GitHub!
