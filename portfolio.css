@@ -112,7 +112,7 @@ section:hover {
 
 /* Hero Section Styles */
 .hero {
-    background-image: url("Img/Background Image.png");
+    background-image: url("Assets/Background Image.png");
     background-size: cover;
     background-position: center;
     padding: 100px 0;
