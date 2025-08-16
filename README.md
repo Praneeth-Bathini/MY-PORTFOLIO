@@ -3,6 +3,8 @@
 Welcome to my personal portfolio website!  
 This project showcases my skills, projects, certifications, and experiences as a **Computer Science student specializing in AI & ML**.
 
+You can view the live portfolio here 👉 [My Portfolio](https://praneeth-bathini.github.io/MY-PORTFOLIO)
+
 ## 📖 About
 
 This portfolio is built to highlight:
