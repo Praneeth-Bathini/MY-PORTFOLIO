@@ -1,6 +1,4 @@
-// =======================
-// MENU TOGGLE FUNCTIONALITY
-// =======================
+// Menu Toggle
 const menuIcon = document.getElementById('menu-icon');
 const navbar = document.querySelector('.navbar');
 
@@ -8,10 +6,7 @@ menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
 
-// =======================
-// SCROLL REVEAL ANIMATIONS
-// =======================
-// Using ScrollReveal.js to animate sections on scroll
+// Scroll Reveal Animations
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
@@ -20,7 +15,6 @@ const sr = ScrollReveal({
     reset: true
 });
 
-// Reveal sections
 sr.reveal('.hero .container', { delay: 10 });
 sr.reveal('.about .about-content', { delay: 10 });
 sr.reveal('.skills .skills-container', { delay: 10 });
@@ -31,15 +25,13 @@ sr.reveal('.resume .resume-content', { delay: 10 });
 sr.reveal('.education .education-content', { delay: 10 });
 sr.reveal('.footer', { delay: 10 });
 
-// =======================
-// SWIPER.JS INITIALIZATION
-// =======================
-// Optional: For testimonial or project sliders
+// Swiper.js (for Testimonial Slider - optional)
 const swiper = new Swiper('.mySwiper', {
+    // Optional parameters
     direction: 'horizontal',
     loop: true,
 
-    // Pagination bullets
+    // If we need pagination
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -51,7 +43,7 @@ const swiper = new Swiper('.mySwiper', {
         prevEl: '.swiper-button-prev',
     },
 
-    // Scrollbar (optional)
+    // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar',
     },
