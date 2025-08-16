@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- =======================
+         HEAD SECTION
+    ======================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <!-- Swiper CSS for Portfolio Carousel -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Main CSS -->
     <link rel="stylesheet" href="portfolio.css">
+    <!-- Boxicons for Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
 
   <body>
+    <!-- =======================
+         HEADER / NAVIGATION
+    ======================== -->
     <header class="header">
       <div class="container">
         <a href="#" class="logo">PRANEETH BATHINI</a>
@@ -26,12 +35,15 @@
       </div>
     </header>
 
+    <!-- =======================
+         HERO SECTION
+    ======================== -->
     <section class="hero" id="home">
       <div class="container">
         <div class="hero-text">
           <h1>Hello, I'm PRANEETH BATHINI</h1>
           <h2>Dedicated to Engineering Excellence and Innovation</h2>
-          <p>I am a computer science student with a keen interest in coding and a commitment to continuous learning. I’m passionate about exploring new technologies and expanding my programming skills across various domains. My goal is to leverage my technical knowledge to solve complex problems and contribute meaningfully to innovative projects in the field of computer science.</p>
+          <p>I’m a Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning, with expertise in Python, Java. Passionate about innovation, I strive to build scalable, real-time applications that solve real-world problems and push the boundaries of technology.</p>
           <a href="https://github.com/Praneeth-Bathini" class="btn">View My Work</a>
         </div>
         <div class="hero-image">
@@ -40,134 +52,243 @@
       </div>
     </section>
 
+    <!-- =======================
+         ABOUT SECTION
+    ======================== -->
     <section class="about" id="about">
-      <div class="container">
-        <h2 class="heading">About Me</h2>
+      <div class="container about-container">
         <div class="about-content">
-          <p>With a background in computer science, I have developed a strong foundation in coding, problem-solving, and analytical thinking. My experience includes few C, Python, and Java internships.And few Machine Learning projects. where I've honed my technical skills and expanded my understanding of Machine Learning Algorithms, Deep Learning and Web Development.
-
-            I am highly motivated by the opportunity to learn and grow within the ever-evolving field of technology. The challenge of solving complex problems and creating efficient solutions drives my passion for coding, and I’m excited to make an impact by applying my skills in innovative and meaningful ways. My goal is to contribute to projects that not only advance my technical expertise but also bring real value to the field.</p>
+          <h2 class="heading">About Me</h2>
+          <p>
+            I have a strong foundation in <span class="highlight">coding</span>, <span class="highlight">problem-solving</span>, and 
+            <span class="highlight">analytical thinking</span>, strengthened through internships in 
+            <span class="highlight">C, Python, and Java</span>, and hands-on experience with 
+            <span class="highlight">machine learning</span> and <span class="highlight">deep learning projects</span>.  
+            My work spans <span class="highlight">AI</span>, <span class="highlight">web development</span>, and 
+            <span class="highlight">data analytics</span>, where I combine technical expertise with creativity to deliver impactful solutions.
+          </p>
+          <p>
+            Driven by curiosity and a commitment to <span class="highlight">continuous learning</span>, I’m motivated by the challenge 
+            of solving complex problems and creating efficient, scalable systems. My goal is to contribute to 
+            <span class="highlight">innovative projects</span> that bring real value to businesses and society.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- =======================
+         SKILLS SECTION
+    ======================== -->
     <section class="skills" id="skills">
       <div class="container">
-        <h2 class="heading">My Skills</h2>
-        <div class="skills-container">
-          <div class="skill-box">
-            <i class='bx bxl-html5'></i>
-            <h3>HTML & CSS</h3>
-            <p>Proficient in HTML and CSS, with the ability to structure and style responsive, accessible web pages. I focus on clean code and usability to create visually appealing, user-friendly designs.
-            </p>
+        <h2 class="heading">Technical Skills</h2>
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-category">
+            <h3>Languages</h3>
+            <div class="skill-list">
+              <span class="skill-item">Java</span>
+              <span class="skill-item">Python</span>
+              <span class="skill-item">C</span>
+              <span class="skill-item">C++</span>
+            </div>
           </div>
-          <div class="skill-box">
-            <i class='bx bxl-javascript'></i>
-            <h3>JavaScript</h3>
-            <p>Skilled in JavaScript for creating dynamic, interactive web applications. Familiar with concepts.</p>
+          <!-- Web Development -->
+          <div class="skill-category">
+            <h3>Web Development</h3>
+            <div class="skill-list">
+              <span class="skill-item">HTML</span>
+              <span class="skill-item">CSS</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">Django</span>
+              <span class="skill-item">Node.js</span>
+            </div>
           </div>
-          <div class="skill-box">
-            <i class='bx bxl-python'></i>
-            <h3>Python</h3>
-            <p>Proficient in Python for data manipulation, scripting, and problem-solving. I am skilled at writing clean, efficient code for automation and data analysis, and comfortable with libraries like Pandas and NumPy.
-
-            </p>
+          <!-- Databases -->
+          <div class="skill-category">
+            <h3>Databases</h3>
+            <div class="skill-list">
+              <span class="skill-item">MySQL</span>
+              <span class="skill-item">MongoDB</span>
+              <span class="skill-item">PostgreSQL</span>
+            </div>
           </div>
-          <div class="skill-box">
-            <i class='bx bxl-java'></i>
-            <h3>Java</h3>
-            <p>Experienced in Java, especially with object-oriented programming concepts, data structures, and algorithms.</p>
+          <!-- Core Concepts -->
+          <div class="skill-category">
+            <h3>Core Concepts</h3>
+            <div class="skill-list">
+              <span class="skill-item">Data Structures & Algorithms</span>
+              <span class="skill-item">Data Analytics</span>
+              <span class="skill-item">OOP</span>
+              <span class="skill-item">CN</span>
+              <span class="skill-item">DBMS</span>
+              <span class="skill-item">OS</span>
+              <span class="skill-item">Computer Vision</span>
+            </div>
           </div>
-          <!-- Add more skill boxes as needed -->
+          <!-- Libraries -->
+          <div class="skill-category">
+            <h3>Libraries</h3>
+            <div class="skill-list">
+              <span class="skill-item">Scikit-learn</span>
+              <span class="skill-item">Pandas</span>
+              <span class="skill-item">NumPy</span>
+              <span class="skill-item">Matplotlib</span>
+              <span class="skill-item">Seaborn</span>
+              <span class="skill-item">TensorFlow (Basics)</span>
+              <span class="skill-item">Transformers (Beginner)</span>
+            </div>
+          </div>
+          <!-- Technologies -->
+          <div class="skill-category">
+            <h3>Technologies</h3>
+            <div class="skill-list">
+              <span class="skill-item">Machine Learning</span>
+              <span class="skill-item">Deep Learning (CNN)</span>
+              <span class="skill-item">NLP (LLMs)</span>
+              <span class="skill-item">OpenCV</span>
+            </div>
+          </div>
+          <!-- Cloud Platforms -->
+          <div class="skill-category">
+            <h3>Cloud Platforms</h3>
+            <div class="skill-list">
+              <span class="skill-item">AWS</span>
+              <span class="skill-item">Microsoft Azure</span>
+              <span class="skill-item">Google Cloud Platform</span>
+            </div>
+          </div>
+          <!-- Tools -->
+          <div class="skill-category">
+            <h3>Tools</h3>
+            <div class="skill-list">
+              <span class="skill-item">Git</span>
+              <span class="skill-item">GitHub</span>
+              <span class="skill-item">Linux</span>
+              <span class="skill-item">Tableau</span>
+              <span class="skill-item">Power BI</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- =======================
+         PROJECT SECTION
+    ======================== -->
     <section class="portfolio" id="portfolio">
       <div class="container">
         <h2 class="heading">My Projects</h2>
         <div class="portfolio-container">
+
+          <!-- Portfolio Item -->
           <div class="portfolio-box">
-            <img src="Img/credit-card-fraud-detection.png" alt="Project 1">
+            <img src="Img/credit-card-fraud-detection.png" alt="Credit Card Fraud Detection">
             <div class="portfolio-content">
-              <h4>Credit Card Fraud Detection</h4>
-              <p>Uses machine learning algorithms such as logistic regression, decision trees, and neural networks to identify suspicious transactions.
-              </p>
-              <a href="https://github.com/Praneeth-Bathini/Credit-Card-Fraud-Detection-Using-ML" class="btn">View Project</a>
+              <h3 class="project-title">Credit Card Fraud Detection</h3>
+              <p>ML models (Logistic Regression, Decision Trees, Neural Networks) to detect fraudulent transactions.</p>
+              <a href="https://github.com/Praneeth-Bathini/Credit-Card-Fraud-Detection-Using-ML" target="_blank" class="btn">View Project</a>
             </div>
           </div>
+
           <div class="portfolio-box">
-            <img src="Img/age salary prediction.jpg" alt="Project 2">
+            <img src="Img/age salary prediction.jpg" alt="Age & Salary Prediction">
             <div class="portfolio-content">
-              <h4>Age & Salary Prediction</h4>
-              <p>Employs machine learning models like linear regression, decision trees, and neural networks to estimate age and salary based on relevant data.</p>
-              <a href="https://github.com/Praneeth-Bathini/AGE-AND-SALARY-PREDICTION-USING-ML" class="btn">View Project</a>
+              <h3 class="project-title">Age & Salary Prediction</h3>
+              <p>Predicts age and salary using Linear Regression, Decision Trees, and Neural Networks on relevant data.</p>
+              <a href="https://github.com/Praneeth-Bathini/AGE-AND-SALARY-PREDICTION-USING-ML" target="_blank" class="btn">View Project</a>
             </div>
           </div>
-              <div class="portfolio-box">
-                <img src="Img/Stock Price Prediction Using Twitter Dataset.jpg" alt="Project 1">
-                <div class="portfolio-content">
-                  <h4>Stock Price Prediction Using Twitter Dataset</h4>
-                  <p>The project analyzes Twitter data using natural language processing (NLP) techniques to extract sentiment, which is then integrated with historical stock price data to train machine learning models. 
-                  </p>
-                  <a href="https://github.com/Praneeth-Bathini/Stock-price-Prediction-Using-Twitter-Dataset-" class="btn">View Project</a>
-                </div>
-              </div>
-          <!-- Add more project boxes -->
+
+          <div class="portfolio-box">
+            <img src="Img/Stock Price Prediction Using Twitter Dataset.jpg" alt="Stock Price Prediction">
+            <div class="portfolio-content">
+              <h3 class="project-title">Stock Price Prediction</h3>
+              <p>Uses sentiment analysis from Twitter data combined with stock history to train ML models for predictions.</p>
+              <a href="https://github.com/Praneeth-Bathini/Stock-price-Prediction-Using-Twitter-Dataset-" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="Img/Helmet_Detection.png" alt="Helmet Detection">
+            <div class="portfolio-content">
+              <h3 class="project-title">Helmet Detection (CNN)</h3>
+              <p>Real-time helmet detection system using CNNs, TensorFlow, and OpenCV for traffic safety enforcement.</p>
+              <a href="https://github.com/Praneeth-Bathini/CNN-Powered-Helmet-Detection-for-Rider-Safety-and-Law-Enforcement" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="Img/Language_Detection.png" alt="Language Detection">
+            <div class="portfolio-content">
+              <h3 class="project-title">Language Detection</h3>
+              <p>NLP-based ML model with TF-IDF, Naive Bayes, and Random Forest for multilingual text classification.</p>
+              <a href="https://github.com/Praneeth-Bathini/LANGUAGE-DETECTION-USING-NLP-ML" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+
+          <div class="portfolio-box">
+            <img src="Img/DDoS_Attacks.jpg" alt="DDoS Attack Classification">
+            <div class="portfolio-content">
+              <h3 class="project-title">DDoS Attack Classification</h3>
+              <p>ML system to detect and classify DDoS attacks using Random Forest and SVM for improved accuracy.</p>
+              <a href="https://github.com/Praneeth-Bathini/An-Effective-Classification-of-DDoS-Attacks-using-ML" target="_blank" class="btn">View Project</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-
-    <section class="cta" id="cta"> 
+        <!-- =======================
+         CALL TO ACTION (CTA)
+    ======================== -->
+    <section class="cta" id="cta">
       <div class="container">
         <div class="cta-content">
           <h2>Ready to Work Together?</h2>
-          <p>Let's bring your project ideas to life. </p>
+          <p>Let's bring your project ideas to life.</p>
           <a href="https://www.linkedin.com/in/praneeth-bathini-46135a335" class="btn">Contact Me</a>
         </div>
       </div>
     </section>
 
-    <section class="resume" id="resume"> 
+    <!-- =======================
+         RESUME SECTION
+    ======================== -->
+    <section class="resume" id="resume">
       <div class="container">
         <h2 class="heading">My Resume</h2>
         <div class="resume-content">
+
+          <!-- Work Experience -->
           <h3>Work Experience</h3>
           <ul>
             <li>
-              <h4>Student Intern</h4>
-              <p><em>MallaReddy Engineering College</em> - Hyderabad,Telangana </p>
+              <h4>Advanced AI & Deep Learning Intern</h4>
+              <p><em>Skilltimate Technologies</em> - Hyderabad, Telangana | May 2024</p>
               <ul>
-                <li>Developed and maintained web applications using HTML, CSS, JavaScript, and Python.</li>
-                <li>Collaborated with a team of engineers to design and implement new features.</li>
+                <li>Developed a Helmet Detection system using CNNs, TensorFlow, and Keras for real-time image classification.</li>
+                <li>Gained experience in computer vision, Python, and deep learning through hands-on AI project development.</li>
               </ul>
             </li>
-            <!-- Add more work experience items as needed -->
+            <li>
+              <h4>Junior Developer</h4>
+              <p><em>R2 Educational Services</em> - Hyderabad, Telangana | May 2023</p>
+              <ul>
+                <li>Built a web application to improve user experience and optimized backend code for better performance.</li>
+                <li>Integrated data workflows and enhanced backend functionality to ensure smooth system operations.</li>
+              </ul>
+            </li>
           </ul>
 
-          <h3>Education</h3>
-          <ul>
-            <li>
-              <h4>Bachelor of Science in Computer Science & Engineering</h4>
-              <p><em>At MallaReddy Engineering College</em> - Hyderabad, Telangana |  2022 - 2026</p>
-            </li>
-            <!-- Add more education items as needed -->
-          </ul>
-          
-          <h3>Skills</h3>
-          <ul>
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Java</li>
-            <!-- Add more skills as needed -->
-          </ul>
-          <a href="Img/General Resume.jpg" target="_blank" class="btn">Download Resume</a>
+          <a href="praneeth.pdf" target="_blank" class="btn">Download Resume</a>
         </div>
       </div>
     </section>
 
+    <!-- =======================
+         EDUCATION SECTION
+    ======================== -->
     <section class="education" id="education">
       <div class="container">
         <h2 class="heading">Education</h2>
@@ -175,65 +296,107 @@
           <h3>Formal Education</h3>
           <ul>
             <li>
-              <h4>Bachelor of Science in Computer Science & Engineering</h4>
-              <p><em>MallaReddy Engineering College</em> - Hyderabad, Telangana |  2022 - 2026</p>
-              <p>Relevant Coursework:Artificial Intelligence & Machine Learning</p>
-            </li>
-          </ul>
-
-          <h3>Certifications</h3>
-          <ul>
-            <li>
-              <h4>Introduction to Cybersecurity</h4>
-              <p><em>CISCO Networking Academy</em> - June 21, 2023</p>
+              <h4>B.Tech in Computer Science & Engineering (AIML)</h4>
+              <p><em>Malla Reddy Engineering College</em> - Hyderabad, Telangana | 2022 – 2026</p>
+              <p>CGPA: 9.15</p>
             </li>
             <li>
-              <h4>Python Programming Workshop</h4>
-              <p><em>Skilltimate Technologies</em> - June, 2023</p>
+              <h4>Intermediate (MPC)</h4>
+              <p><em>SR Junior College</em> - Hanamkonda, Telangana | 2020 – 2022</p>
+              <p>Percentage: 93.5%</p>
             </li>
             <li>
-              <h4>C Programming Language Workshop<h4>
-              <p><em>Skilltimate Technologies</em> - February, 2023</p>
+              <h4>SSC</h4>
+              <p><em>Spectra Concept EM School</em> - Athmakur, Telangana | 2019 – 2020</p>
+              <p>GPA: 10</p>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
+    <!-- =======================
+         CERTIFICATIONS SECTION
+    ======================== -->
+    <section class="certifications" id="certifications">
+      <div class="container">
+        <h3>Certifications</h3>
+        <ul>
+          <li>
+            <h4>Career Essentials in Generative AI</h4>
+            <p><em>Microsoft & LinkedIn</em> - March 2025</p>
+          </li>
+          <li>
+            <h4>Azure AI Fundamentals</h4>
+            <p><em>Microsoft</em> - May 2025</p>
+          </li>
+          <li>
+            <h4>Data Analytics Job Simulation</h4>
+            <p><em>Deloitte Australia</em> - March 2025</p>
+          </li>
+          <li>
+            <h4>Introduction to Cybersecurity</h4>
+            <p><em>Cisco Networking Academy</em> - June 21, 2023</p>
+          </li>
+          <li>
+            <h4>Python Programming Workshop</h4>
+            <p><em>Skilltimate Technologies</em> - June 2023</p>
+          </li>
+          <li>
+            <h4>C Programming Workshop</h4>
+            <p><em>Skilltimate Technologies</em> - February 2023</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- =======================
+         CONTACT SECTION
+    ======================== -->
     <section class="contact" id="contact">
       <div class="container">
         <h2 class="heading">Get in Touch</h2>
         <div class="contact-content">
-          <p>[Provide your contact information: email, phone number, social media links.]</p>
-          <form action="#" method="post">
+          <p>
+            I’m always open to discussing projects, collaborations, or career opportunities.  
+            You can reach me directly via email, phone, or connect with me on social media.
+          </p>
+
+          <!-- Contact Form -->
+          <form action="https://formspree.io/f/xwpqzyrk" method="POST">
             <div class="input-box">
-              <input type="text" placeholder="Your Name" required>
-              <input type="email" placeholder="Your Email" required>
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="_replyto" placeholder="Your Email" required>
             </div>
-            <textarea placeholder="Your Message" required></textarea>
+            <textarea name="message" placeholder="Your Message" required></textarea>
             <input type="submit" value="Send Message" class="btn">
           </form>
+
+          <!-- Mail Button -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=praneethbathini2916@gmail.com&su=Hello%20Praneeth&body=Hi%20Praneeth," target="_blank" class="mail-btn">Send Me an Email</a>
         </div>
       </div>
     </section>
 
+    <!-- =======================
+         FOOTER SECTION
+    ======================== -->
     <footer class="footer">
       <div class="container">
         <div class="social-media">
           <a href="https://www.linkedin.com/in/praneeth-bathini-46135a335" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-          <a href="https://www.instagram.com/praneeth_bathini" target="_blank"><i class='bx bxl-instagram'></i></a>
+          <a href="https://www.instagram.com/bluebillie_me" target="_blank"><i class='bx bxl-instagram'></i></a>
           <a href="https://github.com/Praneeth-Bathini" target="_blank"><i class='bx bxl-github'></i></a>
-          <!-- Add other social media links as needed -->
+          <a href="https://x.com/PraneethBathini" target="_blank"><i class='bx bxl-twitter'></i></a>
         </div>
-        <p>© 2025 Praneeth Bathini- All Rights Reserved</p>
+        <p>© 2025 Praneeth Bathini - All Rights Reserved</p>
       </div>
     </footer>
 
+    <!-- =======================
+         JAVASCRIPT SECTION
+    ======================== -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="portfolio.js"></script> 
+    <script src="portfolio.js"></script>
   </body>
-
 </html>
-
-
