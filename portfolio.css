@@ -102,21 +102,21 @@ a:hover {
 
 section {
     padding: 80px 0;
-    transition: box-shadow 0.3s ease; /* Add a transition for the box-shadow */
-    position: relative; /* Necessary for positioning the shadow */
-  }
-  
-  section:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Add the shadow on hover */
-  }  
+    transition: box-shadow 0.3s ease;
+    position: relative;
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
 
 /* Hero Section Styles */
 .hero {
-    background-image: url("Img/Background Image.png"); /* Replace with your background image */
+    background-image: url("Img/Background Image.png");
     background-size: cover;
     background-position: center;
     padding: 100px 0;
-    color: #f2f2f2; /* Light text color for hero section */
+    color: #f2f2f2;
 }
 
 .hero .container {
@@ -137,102 +137,203 @@ section {
     width: 100%;
     border-radius: 10px;
 }
-.hero {
-    /* ... (Your existing hero styles) ... */
-    box-shadow: none;
-  }
 
-/* About Section Styles */
+.hero {
+    box-shadow: none;
+}
+
+/* About Section - Modern & Stylish */
 .about {
-    background-color: #282c34;
-    padding: 80px 0;
+    padding: 70px 0;
+    background: linear-gradient(135deg, #1e1e1e, #282c34);
+}
+
+.about .container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.about .heading {
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.about .heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #3B82F6;
+    margin: 10px auto 0;
+    border-radius: 2px;
 }
 
 .about-content {
-    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #d1d5db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Skills Section Styles */
-.skills {
-    padding: 80px 0;
-    background-color: #282c34; /* Darker gray background for Skills section */
+.about-content:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.skill-box {
-    background: #333; /* Dark gray background for Skill boxes */
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.skill-box i {
-    font-size: 2.5rem;
-    color: #007bff; /* Blue color for icons */
+.about-content p {
     margin-bottom: 15px;
 }
 
-/* Portfolio Section Styles */
+.about-content .highlight {
+    color: #3B82F6;
+    font-weight: 600;
+}
+
+/* Skills Section Styles - Compact & Attractive */
+.skills {
+    padding: 60px 0;
+    background-color: #282c34;
+}
+
+.skills .heading {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 35px;
+    color: #f2f2f2;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    background: #333;
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.skill-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #3B82F6;
+    border-bottom: 1px solid #3B82F6;
+    padding-bottom: 4px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.skill-item {
+    background: #374151;
+    color: #f9fafb;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-item:hover {
+    background: #3B82F6;
+    color: #fff;
+}
+
+/* Projects Section */
 .portfolio {
     background-color: #282c34;
     padding: 80px 0;
 }
 
+.portfolio .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #f2f2f2;
+}
+
 .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .portfolio-box {
-    width: 300px;
-    background: #333; /* Dark gray background for Portfolio boxes */
-    border-radius: 10px;
+    background: #333;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
 
 .portfolio-box img {
     width: 100%;
-    height: 200px;
+    height: 160px;
     object-fit: cover;
 }
 
 .portfolio-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
-    color: #f2f2f2; /* Light text color for description */
-    transition: all 0.3s ease;
-    transform: translateY(100%); /* Initially hidden */
-    opacity: 0;
-    overflow: hidden;  /* This will prevent the content from overflowing */
+    padding: 15px 20px;
 }
 
-.portfolio-box:hover .portfolio-content {
-    transform: translateY(0);
-    opacity: 1;
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3B82F6;
+    margin-bottom: 8px;
 }
 
-.portfolio-content h4 {
-    margin-bottom: 10px;
+.portfolio-content p {
+    font-size: 0.9rem;
+    color: #d1d5db;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.portfolio-content .btn {
+    display: inline-block;
+    background: #3B82F6;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-content .btn:hover {
+    background: #2563EB;
 }
 
 /* CTA Section */
 .cta {
-    background-color: #282c34; /* Darker gray background for CTA section */
+    background-color: #282c34;
     padding: 80px 0;
     text-align: center;
 }
@@ -245,7 +346,7 @@ section {
 /* Contact Section Styles */
 .contact {
     padding: 80px 0;
-    background-color: #282c34; /* Darker gray background for Contact section */
+    background-color: #282c34;
 }
 
 .contact-content {
@@ -265,8 +366,8 @@ section {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #333; /* Dark gray background for input fields */
-    color: #f2f2f2; /* Light text color for input fields */
+    background-color: #333;
+    color: #f2f2f2;
 }
 
 textarea {
@@ -274,93 +375,418 @@ textarea {
     resize: vertical;
 }
 
-/* Resume Section */
+/* Resume Section - Stylish & Animated */
 .resume {
-  padding: 80px 0;
-  background-color: #282c34; /* Darker gray background for Resume section */
+    padding: 80px 0;
+    background-color: #282c34;
+    color: #f2f2f2;
+}
+
+.resume .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #3B82F6;
+    position: relative;
+}
+
+.resume .heading::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #3B82F6;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
 .resume-content {
-  text-align: left; 
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .resume-content h3 {
-  margin-top: 30px;
-  margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #f9fafb;
+    border-left: 4px solid #3B82F6;
+    padding-left: 10px;
 }
 
 .resume-content ul {
-  list-style-type: disc;
-  padding-left: 20px;
+    list-style: none;
+    padding: 0;
 }
 
 .resume-content li {
-  margin-bottom: 10px;
+    background: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
 }
 
-.resume-content li ul {
-  list-style-type: circle;
-  padding-left: 20px;
+.resume-content li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.resume-content li:nth-child(2) {
+    animation-delay: 0.3s;
 }
 
-.resume-content li p {
-  margin-bottom: 5px;
-  font-style: italic;
+.resume-content li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
+
+.resume-content h4 {
+    font-size: 1.3rem;
+    color: #3B82F6;
+    margin-bottom: 5px;
+}
+
+.resume-content p {
+    font-size: 1.3rem;
+    color: #d1d5db;
+    margin-bottom: 10px;
+}
+
+.resume-content ul ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.resume-content ul ul li {
+    background: none;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #f2f2f2;
+    font-size: 1rem;
+}
+
 .resume-content .btn {
-    /* Add any styles you want for the button, e.g.: */
-    background-color: #007bff; /* Blue button background */
+    display: inline-block;
+    background: #3B82F6;
     color: #fff;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
 
-/* Education Section */
+.resume-content .btn:hover {
+    background: #2563EB;
+    transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Education Section - Modern Timeline Style */
 .education {
-  padding: 80px 0;
-  background-color: #282c34; /* Darker gray background for Education section */
+    padding: 80px 0;
+    background: #1e1e1e;
+    color: #f2f2f2;
+}
+
+.education .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #3B82F6;
+    position: relative;
+}
+
+.education .heading::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #3B82F6;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
 }
 
 .education-content {
-  text-align: left; 
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 30px;
 }
 
-.education-content h3 {
-  margin-top: 30px;
-  margin-bottom: 15px;
+.education-content::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: #3B82F6;
+    border-radius: 2px;
 }
 
 .education-content ul {
-  list-style-type: disc;
-  padding-left: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .education-content li {
-  margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 35px;
+    padding-left: 25px;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
 }
 
-.education-content li ul {
-  list-style-type: circle;
-  padding-left: 20px;
+.education-content li:nth-child(1) { animation-delay: 0.1s; }
+.education-content li:nth-child(2) { animation-delay: 0.3s; }
+.education-content li:nth-child(3) { animation-delay: 0.5s; }
+
+.education-content li::before {
+    content: '';
+    position: absolute;
+    left: -3px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: #3B82F6;
+    border-radius: 50%;
+    border: 2px solid #1e1e1e;
 }
 
-.education-content li p {
-  margin-bottom: 5px;
-  font-style: italic;
+.education-content h4 {
+    font-size: 1.4rem;
+    color: #3B82F6;
+    margin-bottom: 5px;
 }
+
+.education-content p {
+    font-size: 1.2rem;
+    color: #d1d5db;
+    margin-bottom: 5px;
+}
+
+/* Animation for timeline items */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Certifications Section - Stylish Card Layout */
+.certifications {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1f1f1f, #292929);
+    color: #f2f2f2;
+}
+
+.certifications .heading,
+.certifications h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: #3B82F6;
+    position: relative;
+}
+
+.certifications .heading::after,
+.certifications h3::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #3B82F6;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.certifications ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.certifications li {
+    background: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.certifications li:nth-child(1) { animation-delay: 0.1s; }
+.certifications li:nth-child(2) { animation-delay: 0.2s; }
+.certifications li:nth-child(3) { animation-delay: 0.3s; }
+.certifications li:nth-child(4) { animation-delay: 0.4s; }
+.certifications li:nth-child(5) { animation-delay: 0.5s; }
+.certifications li:nth-child(6) { animation-delay: 0.6s; }
+
+.certifications li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.certifications h4 {
+    font-size: 1.3rem;
+    color: #3B82F6;
+    margin-bottom: 8px;
+}
+
+.certifications p {
+    font-size: 1rem;
+    color: #d1d5db;
+    margin: 0;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Sleek Concise Dark Theme Get in Touch */
+.contact {
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 20px 40px; /* Less vertical, more horizontal for elegance */
+  text-align: center;
+  border-radius: 16px;
+  margin: 40px auto; /* Center the box with some space above/below */
+  max-width: 650px; /* Keep it neat and compact */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.contact:hover {
+  transform: translateY(-3px); /* Subtle hover lift for interactivity */
+}
+
+.contact .heading {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #3B82F6;
+  font-weight: 700;
+}
+
+.contact p {
+  font-size: 1rem;
+  margin-bottom: 18px; /* Balanced spacing */
+  color: #cccccc;
+}
+
+.contact .contact-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px; /* Even spacing for inputs & textarea */
+}
+
+.contact .contact-content input,
+.contact .contact-content textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px 18px; /* Modern comfortable padding */
+  border-radius: 15px;
+  border: 1px solid #333;
+  font-size: 0.95rem;
+  background: #222;
+  color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact .contact-content input:focus,
+.contact .contact-content textarea:focus {
+  border-color: #3B82F6;
+  box-shadow: 0 0 8px #00ffff44;
+  outline: none;
+}
+
+.contact .contact-content input[type="submit"],
+.contact .mail-btn {
+  padding: 12px 28px;
+  border-radius: 15px;
+  font-weight: 600;
+  background: #3B82F6;
+  color: #1a1a1a;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact .contact-content input[type="submit"]:hover,
+.contact .mail-btn:hover {
+  background: #3B82F6;
+  transform: translateY(-2px);
+}
+
+/* Send Me an Email Button Style */
+.mail-btn {
+    display: inline-block;
+    background-color: #007bff; /* Same as other buttons */
+    color: #fff;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Ensures link looks like a button */
+    margin-top: 10px;
+}
+
+.mail-btn:hover {
+    background-color: #0069d9; /* Same hover effect as other buttons */
+    transform: scale(1.03);
+}
+
 
 /* Footer Styles */
 .footer {
-    background: #181818; /* Darker gray background for footer */
-    color: #f2f2f2; /* Light text color for footer */
+    background: #181818;
+    background: linear-gradient(135deg, #1f1f1f, #292929);
+    color: #f2f2f2;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Footer Social Media Links */
 .footer .social-media {
     display: flex;
     justify-content: center;
@@ -368,19 +794,16 @@ textarea {
 }
 
 .footer .social-media a {
-    color: #007bff; /* Blue color for social media icons */
+    color: #007bff;
     margin: 0 10px;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .footer .social-media a:hover {
-    color: #f2f2f2; /* Light text color for social media icons on hover */
+    color: #f2f2f2;
 }
-.footer {
-    /* ... (Your existing footer styles) ... */
-    box-shadow: none;
-  }
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
